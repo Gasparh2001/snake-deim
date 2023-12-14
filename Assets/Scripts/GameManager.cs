@@ -60,6 +60,15 @@ public class GameManager : MonoBehaviour
                 PauseGame();
             }
         }
+
+        if (ColorElection =! null)
+            {
+                ColorElection();
+            }
+        else (ColorElection == null)
+            {
+                ResumeGame();
+            }
     }
 
     public void SnakeDied()
@@ -78,6 +87,12 @@ public class GameManager : MonoBehaviour
     {
         Time.timeScale = 1f;
         PauseUI.Instance.Hide();
+        isPaused = false;
+    }
+    public void ColorElection()
+    {
+        Time.timeScale = 1f;
+        ChangeColorUI.Instance.Hide();
         isPaused = false;
     }
 }

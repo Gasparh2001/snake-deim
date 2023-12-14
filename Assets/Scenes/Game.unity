@@ -515,7 +515,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
-  m_UseSpriteMesh: 0
+  m_UseSpriteMesh: 1
   m_PixelsPerUnitMultiplier: 1
 --- !u!222 &297447424
 CanvasRenderer:
@@ -1692,6 +1692,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1500210691}
+  - component: {fileID: 1500210692}
   m_Layer: 0
   m_Name: Cange Color
   m_TagString: Untagged
@@ -1719,6 +1720,25 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1500210692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1500210690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f57029518cdae284ca8eb387af0d26b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snakColor:
+  - {fileID: 21300000, guid: 25fc90d93ff1a24439f09e3ed73f2f03, type: 3}
+  - {fileID: 21300000, guid: 17c5b1e0b4acf884ba6b37505e142179, type: 3}
+  - {fileID: 21300000, guid: cb0dda71d17e14a5397dd937d9b48cf9, type: 3}
+  snakeRedButton: {fileID: 297447422}
+  snakeGreenButton: {fileID: 1642566437}
+  snakeButton: {fileID: 822061505}
 --- !u!1 &1548044186
 GameObject:
   m_ObjectHideFlags: 0
